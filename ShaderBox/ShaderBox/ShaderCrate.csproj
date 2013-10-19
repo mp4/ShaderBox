@@ -67,9 +67,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\ShaderBoxLib\ShaderBoxLib.csproj">
+    <ProjectReference Include="..\ShaderBoxLib\ShaderCrateLib.csproj">
       <Project>{E1AE9559-F756-421B-AA68-5FEE4B29925B}</Project>
-      <Name>ShaderBoxLib</Name>
+      <Name>ShaderCrateLib</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

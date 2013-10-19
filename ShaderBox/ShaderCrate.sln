@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaderBox", "ShaderBox\ShaderBox.csproj", "{18610117-850C-4948-A5D8-B799F9AAFF94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaderCrate", "ShaderBox\ShaderCrate.csproj", "{18610117-850C-4948-A5D8-B799F9AAFF94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaderBoxLib", "ShaderBoxLib\ShaderBoxLib.csproj", "{E1AE9559-F756-421B-AA68-5FEE4B29925B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaderCrateLib", "ShaderBoxLib\ShaderCrateLib.csproj", "{E1AE9559-F756-421B-AA68-5FEE4B29925B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleShader", "ExampleShader\ExampleShader.csproj", "{68C96D79-990D-4CBA-BD9A-2878C58A9665}"
 EndProject
@@ -27,6 +27,6 @@ Global
 		{E1AE9559-F756-421B-AA68-5FEE4B29925B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = ShaderBox\ShaderBox.csproj
+		StartupItem = ShaderBox\ShaderCrate.csproj
 	EndGlobalSection
 EndGlobal
