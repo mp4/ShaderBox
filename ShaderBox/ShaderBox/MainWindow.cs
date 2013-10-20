@@ -1,7 +1,7 @@
 using System;
 using Gtk;
 using System.Reflection;
-using ShaderBoxLib;
+using ShaderCrateLib;
 using System.Collections.Generic;
 
 public partial class MainWindow: Gtk.Window
@@ -67,6 +67,8 @@ public partial class MainWindow: Gtk.Window
 //				shaderProg.Stop();
 				shaderProg.LoadSuccessful();
 				shaderProg.OneTimeSetup();
+				textviewVertex.Buffer.Text = shaderProg.StartingVertexShader();
+				textviewFragment.Buffer.Text = shaderProg.StartingFragmentShader();
 				label1.Text = "success";
 			}
 		}
@@ -74,5 +76,12 @@ public partial class MainWindow: Gtk.Window
 		{
 			Console.WriteLine(e0.ToString()); 
 		}
+	}
+
+	protected void OnCompileShadersClicked (object sender, EventArgs e)
+	{
+		label1.Text = shaderProg.compileShaders (textviewVertex.Buffer.Text, textviewFragment.Buffer.Text);
+		//decide when to apply shaders
+		shaderProg.setShaders (textviewVertex.Buffer.Text, textviewFragment.Buffer.Text);
 	}
 }

@@ -1,7 +1,7 @@
 using System;
 using Gtk;
 
-namespace ShaderBox
+namespace ShaderCrate
 {
 	class MainClass
 	{
