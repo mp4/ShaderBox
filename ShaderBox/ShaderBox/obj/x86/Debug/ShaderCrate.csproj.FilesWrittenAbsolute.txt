@@ -13,3 +13,5 @@
 /home/marsh/Documents/Github/ShaderBox/ShaderBox/ShaderBox/obj/x86/Debug/ShaderBox.exe.mdb
 /home/marsh/Documents/Github/ShaderBox/ShaderBox/ShaderBox/bin/Debug/ShaderBoxLib.dll
 /home/marsh/Documents/Github/ShaderBox/ShaderBox/ShaderBox/bin/Debug/ShaderBoxLib.dll.mdb
+/home/marsh/Documents/Github/ShaderBox/ShaderBox/ShaderBox/bin/Debug/Pencil.Gaming.dll
+/home/marsh/Documents/Github/ShaderBox/ShaderBox/ShaderBox/bin/Debug/NVorbis.dll

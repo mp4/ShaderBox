@@ -62,11 +62,15 @@ namespace ExampleShader
 				GL.BindBuffer (BufferTarget.ArrayBuffer, vbo);
 				GL.VertexAttribPointer (0, 3, VertexAttribPointerType.Float, false, 0, IntPtr.Zero);
 				string vertex_shader = "#version 400\nin vec3 vp;\n" +
+					"uniform float iGlobalTime;\n"+
+						"uniform vec2 iResolution;\n"+
 						"void main () {"+
 						//"  gl_Position = vec4 (vp, 1.0);"+
 						"gl_Position = vec4 (vp, 1.0);"+
 						"};";
 				string fragment_shader = "#version 400\nout vec4 frag_colour;\n"+
+					"uniform float iGlobalTime;\n"+
+						"uniform vec2 iResolution;\n"+
 					"void main () {"+
 						"  frag_colour = vec4 (0.5, 0.0, 0.5, 1.0);"+
 						"}";;
@@ -86,6 +90,12 @@ namespace ExampleShader
 				GL.LinkProgram (combinedPrograms);
 				GL.ValidateProgram (combinedPrograms);
 
+				var IGlobalTime = GL.GetUniformLocation(combinedPrograms, "iGlobalTime");
+				GL.Uniform1(IGlobalTime, (float)DateTime.Now.Millisecond);
+
+				var iResolustion = GL.GetUniformLocation(combinedPrograms, "iResolution");
+				GL.Uniform2(iResolustion,new Pencil.Gaming.MathUtils.Vector2(800, 600));
+
 				GL.UseProgram (combinedPrograms);
 
 				while(!Glfw.WindowShouldClose(window))
@@ -102,6 +112,10 @@ namespace ExampleShader
 						//GL.BindVertexArray (vao);
 						//GL.DrawArrays (BeginMode.Triangles, 0, verticesF.Length/3);
 						GL.UseProgram (combinedPrograms);
+
+						IGlobalTime = GL.GetUniformLocation(combinedPrograms, "iGlobalTime");
+						GL.Uniform1(IGlobalTime, (float)DateTime.Now.Millisecond);
+
 						GL.BindVertexArray (vao);
 						GL.DrawArrays (BeginMode.Triangles, 0, points.Length/3);
 						Glfw.SwapBuffers (window);
@@ -110,10 +124,14 @@ namespace ExampleShader
 					case 2:
 						GL.Clear (ClearBufferMask.DepthBufferBit | ClearBufferMask.ColorBufferBit);
 
-						GL.ClearColor (0.0f, 1.0f, 0.0f, 1.0f);
+						GL.ClearColor (1.0f, 0.0f, 0.0f, 1.0f);
 						//GL.UseProgram (combinedPrograms);
 						//GL.BindVertexArray (vao);
 						//GL.DrawArrays (BeginMode.Triangles, 0, verticesF.Length/3);
+						GL.UseProgram (combinedPrograms);
+
+						GL.BindVertexArray (vao);
+						GL.DrawArrays (BeginMode.Triangles, 0, points.Length/3);
 						Glfw.SwapBuffers (window);
 						Glfw.PollEvents();
 						break;
@@ -132,6 +150,14 @@ namespace ExampleShader
 						GL.AttachShader (combinedPrograms1, vs1);
 						GL.LinkProgram (combinedPrograms1);
 						GL.ValidateProgram (combinedPrograms1);
+
+						IGlobalTime = GL.GetUniformLocation(combinedPrograms1, "iGlobalTime");
+						GL.Uniform1(IGlobalTime, (float)DateTime.Now.Millisecond);
+
+						iResolustion = GL.GetUniformLocation(combinedPrograms, "iResolution");
+						GL.Uniform2(iResolustion, new Pencil.Gaming.MathUtils.Vector2(800, 600));
+
+						GL.DeleteProgram(combinedPrograms);
 
 						combinedPrograms = combinedPrograms1;
 						state = 1;
@@ -162,6 +188,8 @@ namespace ExampleShader
 		public override string StartingVertexShader ()
 		{
 			return  "#version 400\nin vec3 vp;\n" +
+				"uniform float iGlobalTime;\n"+
+				"uniform vec2 iResolution;\n"+
 				"void main () {"+
 					//"  gl_Position = vec4 (vp, 1.0);"+
 					"gl_Position = vec4 (vp, 1.0);"+
@@ -170,6 +198,8 @@ namespace ExampleShader
 		public override string StartingFragmentShader ()
 		{
 			return "#version 400\nout vec4 frag_colour;\n" +
+				"uniform float iGlobalTime;\n"+
+					"uniform vec2 iResolution;\n"+
 			"void main () {" +
 			"  frag_colour = vec4 (0.5, 0.0, 0.5, 1.0);" +
 			"}";

@@ -92,6 +92,7 @@ namespace ShaderCrateLib
 //			{
 //				shaderReady = true;
 //				output += "validation succeeded";
+			GL.DeleteProgram (combinedPrograms);
 			Glfw.DestroyWindow (window);
 //			}
 			return output;

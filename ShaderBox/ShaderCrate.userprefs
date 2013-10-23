@@ -2,23 +2,26 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="ExampleShader/ExampleShader.cs">
     <Files>
-      <File FileName="ShaderBox/Program.cs" Line="3" Column="1" />
-      <File FileName="ShaderBox/MainWindow.cs" Line="75" Column="36" />
-      <File FileName="ShaderBoxLib/ShaderProgram.cs" Line="28" Column="48" />
-      <File FileName="../../Mastiff/PencilTestsx/PencilTest/CameraDemo/CameraProgram.cs" Line="193" Column="23" />
-      <File FileName="ExampleShader/ExampleShader.cs" Line="58" Column="13" />
+      <File FileName="ShaderBox/Program.cs" Line="1" Column="1" />
+      <File FileName="ShaderBox/MainWindow.cs" Line="1" Column="1" />
+      <File FileName="ShaderBoxLib/ShaderProgram.cs" Line="95" Column="40" />
+      <File FileName="../../Mastiff/PencilTestsx/PencilTest/CameraDemo/CameraProgram.cs" Line="1" Column="1" />
+      <File FileName="ExampleShader/ExampleShader.cs" Line="191" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" selected="True">
+        <State expanded="True">
           <Node name="ExampleShader" expanded="True">
             <Node name="References" expanded="True" />
+            <Node name="ExampleShader.cs" selected="True" />
           </Node>
-          <Node name="ShaderBox" expanded="True">
+          <Node name="ShaderCrate" expanded="True">
             <Node name="References" expanded="True" />
             <Node name="natives64" expanded="True" />
           </Node>
-          <Node name="ShaderBoxLib" expanded="True" />
+          <Node name="ShaderCrateLib" expanded="True">
+            <Node name="References" expanded="True" />
+          </Node>
         </State>
       </Pad>
       <Pad Id="ClassPad">

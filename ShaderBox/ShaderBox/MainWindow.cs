@@ -84,4 +84,10 @@ public partial class MainWindow: Gtk.Window
 		//decide when to apply shaders
 		shaderProg.setShaders (textviewVertex.Buffer.Text, textviewFragment.Buffer.Text);
 	}
+//	void setSyntaxHighlighting(TextBuffer buffer)
+//	{
+//		var blue = new TextTag ();
+//		blue.ForegroundGdk = new Gdk.Color (0, 0, 255);
+//		buffer.ApplyTag (blue, buffer.StartIter, buffer.EndIter);
+//	}
 }
