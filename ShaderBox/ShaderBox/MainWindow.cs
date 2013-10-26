@@ -13,12 +13,22 @@ public partial class MainWindow: Gtk.Window
 	public MainWindow (): base (Gtk.WindowType.Toplevel)
 	{
 		Build ();
+		this.KeyPressEvent += Compile;
 	}
 
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)
 	{
 		Application.Quit ();
 		a.RetVal = true;
+	}
+	void Compile(object sender, KeyPressEventArgs e)
+	{
+		if(e.Event.Key == Gdk.Key.F8)
+		{
+			Console.WriteLine ("kb shorcut compiling");
+			compileShadersM ();
+		}
+
 	}
 
 	protected void OnFilechooserwidget1SelectionChanged (object sender, EventArgs e)
@@ -98,9 +108,7 @@ public partial class MainWindow: Gtk.Window
 
 	protected void OnCompileShadersClicked (object sender, EventArgs e)
 	{
-		label1.Text = shaderProg.compileShaders (textviewVertex.Buffer.Text, textviewFragment.Buffer.Text);
-		//decide when to apply shaders
-		shaderProg.setShaders (textviewVertex.Buffer.Text, textviewFragment.Buffer.Text);
+		compileShadersM ();
 	}
 //	void setSyntaxHighlighting(TextBuffer buffer)
 //	{
@@ -109,6 +117,12 @@ public partial class MainWindow: Gtk.Window
 //		buffer.ApplyTag (blue, buffer.StartIter, buffer.EndIter);
 //	}
 
+	void compileShadersM()
+	{
+		label1.Text = shaderProg.compileShaders (textviewVertex.Buffer.Text, textviewFragment.Buffer.Text);
+		//decide when to apply shaders
+		shaderProg.setShaders (textviewVertex.Buffer.Text, textviewFragment.Buffer.Text);
+	}
 	protected void OnSaveAsClicked (object sender, EventArgs e)
 	{
 		System.IO.File.WriteAllText (SaveDirectory + "/" + saveName +"vertexShader.glsl", shaderProg.getVertexShader ());
