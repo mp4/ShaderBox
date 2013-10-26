@@ -4,7 +4,7 @@ using Pencil.Gaming.Graphics;
 
 namespace ShaderCrateLib
 {
-	public class ShaderProgram
+	public abstract class ShaderProgram
 	{
 		bool shaderReady = true;
 
@@ -101,6 +101,10 @@ namespace ShaderCrateLib
 		{
 
 		}
+		public abstract string getFragmentShader ();
+		public abstract string getVertexShader ();
+		public abstract void setFragmentShader (string frag);
+		public abstract void setVertexShader (string vert);
 	}
 }
 

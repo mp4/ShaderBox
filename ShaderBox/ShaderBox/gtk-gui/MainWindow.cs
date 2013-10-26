@@ -13,6 +13,10 @@ public partial class MainWindow
 	private global::Gtk.Button button1;
 	private global::Gtk.Button button2;
 	private global::Gtk.Button button3;
+	private global::Gtk.VBox vbox2;
+	private global::Gtk.Entry FilePath;
+	private global::Gtk.HBox hbox2;
+	private global::Gtk.Button SaveAs;
 	private global::Gtk.Button compileShaders;
 	private global::Gtk.Label label1;
 
@@ -59,6 +63,7 @@ public partial class MainWindow
 		w5.Position = 2;
 		// Container child vbox1.Gtk.Box+BoxChild
 		this.hbox1 = new global::Gtk.HBox ();
+		this.hbox1.Name = "hbox1";
 		this.hbox1.Spacing = 6;
 		// Container child hbox1.Gtk.Box+BoxChild
 		this.button1 = new global::Gtk.Button ();
@@ -94,37 +99,75 @@ public partial class MainWindow
 		w8.Expand = false;
 		w8.Fill = false;
 		// Container child hbox1.Gtk.Box+BoxChild
+		this.vbox2 = new global::Gtk.VBox ();
+		this.vbox2.Name = "vbox2";
+		this.vbox2.Spacing = 6;
+		// Container child vbox2.Gtk.Box+BoxChild
+		this.FilePath = new global::Gtk.Entry ();
+		this.FilePath.CanFocus = true;
+		this.FilePath.Name = "FilePath";
+		this.FilePath.IsEditable = true;
+		this.FilePath.InvisibleChar = '●';
+		this.vbox2.Add (this.FilePath);
+		global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.FilePath]));
+		w9.Position = 0;
+		w9.Expand = false;
+		w9.Fill = false;
+		// Container child vbox2.Gtk.Box+BoxChild
+		this.hbox2 = new global::Gtk.HBox ();
+		this.hbox2.Name = "hbox2";
+		this.hbox2.Spacing = 6;
+		// Container child hbox2.Gtk.Box+BoxChild
+		this.SaveAs = new global::Gtk.Button ();
+		this.SaveAs.CanFocus = true;
+		this.SaveAs.Name = "SaveAs";
+		this.SaveAs.UseUnderline = true;
+		this.SaveAs.Label = global::Mono.Unix.Catalog.GetString ("Save As");
+		this.hbox2.Add (this.SaveAs);
+		global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.SaveAs]));
+		w10.Position = 0;
+		w10.Expand = false;
+		w10.Fill = false;
+		this.vbox2.Add (this.hbox2);
+		global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.hbox2]));
+		w11.Position = 1;
+		w11.Expand = false;
+		w11.Fill = false;
+		this.hbox1.Add (this.vbox2);
+		global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.vbox2]));
+		w12.Position = 3;
+		// Container child hbox1.Gtk.Box+BoxChild
 		this.compileShaders = new global::Gtk.Button ();
 		this.compileShaders.CanFocus = true;
 		this.compileShaders.Name = "compileShaders";
 		this.compileShaders.UseUnderline = true;
 		this.compileShaders.Label = global::Mono.Unix.Catalog.GetString ("Compile Shaders");
 		this.hbox1.Add (this.compileShaders);
-		global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.compileShaders]));
-		w9.PackType = ((global::Gtk.PackType)(1));
-		w9.Position = 4;
-		w9.Expand = false;
-		w9.Fill = false;
+		global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.compileShaders]));
+		w13.PackType = ((global::Gtk.PackType)(1));
+		w13.Position = 4;
+		w13.Expand = false;
+		w13.Fill = false;
 		this.vbox1.Add (this.hbox1);
-		global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox1]));
-		w10.Position = 3;
-		w10.Expand = false;
-		w10.Fill = false;
+		global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox1]));
+		w14.Position = 3;
+		w14.Expand = false;
+		w14.Fill = false;
 		// Container child vbox1.Gtk.Box+BoxChild
 		this.label1 = new global::Gtk.Label ();
 		this.label1.Name = "label1";
-		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString ("label1");
+		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString ("welcome to ShaderCrate");
 		this.vbox1.Add (this.label1);
-		global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.label1]));
-		w11.Position = 4;
-		w11.Expand = false;
-		w11.Fill = false;
+		global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.label1]));
+		w15.Position = 4;
+		w15.Expand = false;
+		w15.Fill = false;
 		this.Add (this.vbox1);
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
 		}
 		this.DefaultWidth = 637;
-		this.DefaultHeight = 522;
+		this.DefaultHeight = 740;
 		this.Show ();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
 		this.filechooserwidget1.FileActivated += new global::System.EventHandler (this.OnFilechooserwidget1FileActivated);
@@ -133,6 +176,8 @@ public partial class MainWindow
 		this.button1.Clicked += new global::System.EventHandler (this.OnButton1Clicked);
 		this.button2.Clicked += new global::System.EventHandler (this.OnButton2Clicked);
 		this.button3.Clicked += new global::System.EventHandler (this.OnButton3Clicked);
+		this.FilePath.Changed += new global::System.EventHandler (this.OnFilePathChanged);
+		this.SaveAs.Clicked += new global::System.EventHandler (this.OnSaveAsClicked);
 		this.compileShaders.Clicked += new global::System.EventHandler (this.OnCompileShadersClicked);
 	}
 }

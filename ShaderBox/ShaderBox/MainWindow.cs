@@ -7,7 +7,9 @@ using System.Collections.Generic;
 public partial class MainWindow: Gtk.Window
 {
 	ShaderProgram shaderProg;
-
+	//needs updated to be dynamic
+	String SaveDirectory = "/home/marsh/Documents/Github/ShaderBox/ShaderBox/ExampleShader/Shaders";
+	string saveName = "";
 	public MainWindow (): base (Gtk.WindowType.Toplevel)
 	{
 		Build ();
@@ -55,9 +57,9 @@ public partial class MainWindow: Gtk.Window
 		string fileName = ((FileChooser)sender).Filename;
 		try
 		{
-			Assembly asm = Assembly.LoadFile (fileName);
 			if(fileName.EndsWith(".dll"))
 			{
+				Assembly asm = Assembly.LoadFile (fileName);
 				var enumer = asm.DefinedTypes.GetEnumerator();
 				enumer.MoveNext();
 				Console.WriteLine(enumer.Current);
@@ -70,6 +72,22 @@ public partial class MainWindow: Gtk.Window
 				textviewVertex.Buffer.Text = shaderProg.StartingVertexShader();
 				textviewFragment.Buffer.Text = shaderProg.StartingFragmentShader();
 				label1.Text = "success";
+			}
+			else if(fileName.EndsWith("vertexShader.glsl") && shaderProg != null)
+			{
+				var vertexProg = System.IO.File.ReadAllText(fileName);
+				textviewVertex.Buffer.Text = vertexProg;
+				shaderProg.setVertexShader(vertexProg);
+			}
+			else if(fileName.EndsWith("fragmentShader.glsl") && shaderProg != null)
+			{
+				var fragmentProg = System.IO.File.ReadAllText(fileName);
+				textviewFragment.Buffer.Text = fragmentProg;
+				shaderProg.setFragmentShader(fragmentProg);
+			}
+			else if(!fileName.Contains("."))
+			{
+				SaveDirectory = fileName;
 			}
 		}
 		catch(Exception e0)
@@ -90,4 +108,17 @@ public partial class MainWindow: Gtk.Window
 //		blue.ForegroundGdk = new Gdk.Color (0, 0, 255);
 //		buffer.ApplyTag (blue, buffer.StartIter, buffer.EndIter);
 //	}
+
+	protected void OnSaveAsClicked (object sender, EventArgs e)
+	{
+		System.IO.File.WriteAllText (SaveDirectory + "/" + saveName +"vertexShader.glsl", shaderProg.getVertexShader ());
+		System.IO.File.WriteAllText (SaveDirectory + "/" + saveName +"fragmentShader.glsl", shaderProg.getFragmentShader ());
+
+	}
+
+	protected void OnFilePathChanged (object sender, EventArgs e)
+	{
+		Console.WriteLine (FilePath.Text);
+		saveName = FilePath.Text;
+	}
 }

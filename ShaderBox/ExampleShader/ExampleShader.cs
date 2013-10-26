@@ -214,6 +214,22 @@ namespace ExampleShader
 			}
 
 		}
+		public override string getVertexShader ()
+		{
+			return vertex;
+		}
+		public override string getFragmentShader ()
+		{
+			return fragment;
+		}
+		public override void setVertexShader (string vert)
+		{
+			vertex = vert;
+		}
+		public override void setFragmentShader (string frag)
+		{
+			fragment = frag;
+		}
 	}
 }
 
