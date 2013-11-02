@@ -1,0 +1,16 @@
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBox\bin\Debug\natives64\glfw.dll
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBox\bin\Debug\natives64\libglfw.so
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBox\bin\Debug\natives64\liblua.so
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBox\bin\Debug\natives64\libopenal.so
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBox\bin\Debug\natives64\lua.dll
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBox\bin\Debug\natives64\openal32.dll
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBox\bin\Debug\natives64\wrap_oal.dll
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBox\bin\Debug\ShaderBox.exe
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBox\bin\Debug\ShaderBox.pdb
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBox\bin\Debug\ShaderBoxLib.dll
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBox\bin\Debug\Pencil.Gaming.dll
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBox\bin\Debug\NVorbis.dll
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBox\bin\Debug\ShaderBoxLib.pdb
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBox\obj\x86\Debug\ShaderCrate.csprojResolveAssemblyReference.cache
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBox\obj\x86\Debug\ShaderBox.exe
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBox\obj\x86\Debug\ShaderBox.pdb

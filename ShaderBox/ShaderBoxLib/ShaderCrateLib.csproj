@@ -8,7 +8,7 @@
     <ProjectGuid>{E1AE9559-F756-421B-AA68-5FEE4B29925B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>ShaderBoxLib</RootNamespace>
-    <AssemblyName>ShaderBoxLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -19,19 +19,28 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
+    <AssemblyName>ShaderBoxLib</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>full</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
+    <AssemblyName>ShaderBoxLib</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug64|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug64</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>ShaderCrateLib</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="Pencil.Gaming">
-      <HintPath>..\..\..\Pencil.Gaming\Pencil.Gaming\bin\Core - GLFW3\Pencil.Gaming.dll</HintPath>
+      <HintPath>..\..\..\..\Pencil.Gaming\Pencil.Gaming\bin\Core - GLFW3\Pencil.Gaming.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

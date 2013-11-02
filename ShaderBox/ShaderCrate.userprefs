@@ -1,39 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShaderBox/MainWindow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ExampleShader\ExampleShader.cs">
     <Files>
-      <File FileName="ShaderBox/Program.cs" Line="1" Column="1" />
-      <File FileName="ShaderBox/MainWindow.cs" Line="29" Column="19" />
-      <File FileName="ShaderBoxLib/ShaderProgram.cs" Line="1" Column="1" />
-      <File FileName="../../Mastiff/PencilTestsx/PencilTest/CameraDemo/CameraProgram.cs" Line="1" Column="1" />
-      <File FileName="ExampleShader/ExampleShader.cs" Line="1" Column="1" />
+      <File FileName="ShaderBox\Program.cs" Line="1" Column="1" />
+      <File FileName="ShaderBox\MainWindow.cs" Line="29" Column="19" />
+      <File FileName="ShaderBoxLib\ShaderProgram.cs" Line="1" Column="1" />
+      <File FileName="ExampleShader\ExampleShader.cs" Line="14" Column="7" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="ExampleShader" expanded="True">
-            <Node name="References" expanded="True" />
-          </Node>
-          <Node name="ShaderCrate" expanded="True">
-            <Node name="References" expanded="True" />
-            <Node name="natives64" expanded="True" />
-            <Node name="MainWindow.cs" selected="True" />
-          </Node>
-          <Node name="ShaderCrateLib" expanded="True">
-            <Node name="References" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="ClassPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-      <Pad Id="ConnectionManagerPad">
-        <State selected="True" />
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

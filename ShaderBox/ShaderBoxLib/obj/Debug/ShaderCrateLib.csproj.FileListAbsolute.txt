@@ -1,0 +1,6 @@
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBoxLib\bin\Debug\ShaderBoxLib.dll
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBoxLib\bin\Debug\ShaderBoxLib.pdb
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBoxLib\bin\Debug\NVorbis.dll
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBoxLib\obj\Debug\ShaderCrateLib.csprojResolveAssemblyReference.cache
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBoxLib\obj\Debug\ShaderBoxLib.dll
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ShaderBoxLib\obj\Debug\ShaderBoxLib.pdb

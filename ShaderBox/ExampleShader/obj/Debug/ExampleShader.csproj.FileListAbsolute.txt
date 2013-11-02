@@ -1,0 +1,9 @@
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ExampleShader\bin\Debug\ExampleShader.dll
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ExampleShader\bin\Debug\ExampleShader.pdb
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ExampleShader\bin\Debug\Pencil.Gaming.dll
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ExampleShader\bin\Debug\ShaderBoxLib.dll
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ExampleShader\bin\Debug\NVorbis.dll
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ExampleShader\bin\Debug\ShaderBoxLib.pdb
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ExampleShader\obj\Debug\ExampleShader.csprojResolveAssemblyReference.cache
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ExampleShader\obj\Debug\ExampleShader.dll
+C:\Users\Marsh IV\Documents\GitHub\ShaderCrate\ShaderCrate\ShaderBox\ExampleShader\obj\Debug\ExampleShader.pdb

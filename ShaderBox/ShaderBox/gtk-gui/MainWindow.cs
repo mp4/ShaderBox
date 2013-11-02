@@ -19,7 +19,7 @@ public partial class MainWindow
 	private global::Gtk.Button SaveAs;
 	private global::Gtk.Button compileShaders;
 	private global::Gtk.Label label1;
-
+	
 	protected virtual void Build ()
 	{
 		global::Stetic.Gui.Initialize (this);
