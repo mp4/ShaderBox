@@ -1,7 +1,7 @@
-/home/marsh/Documents/Github/ShaderBox/ShaderBox/ShaderBoxLib/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
-/home/marsh/Documents/Github/ShaderBox/ShaderBox/ShaderBoxLib/bin/Debug/ShaderBoxLib.dll.mdb
-/home/marsh/Documents/Github/ShaderBox/ShaderBox/ShaderBoxLib/bin/Debug/ShaderBoxLib.dll
-/home/marsh/Documents/Github/ShaderBox/ShaderBox/ShaderBoxLib/obj/Debug/ShaderBoxLib.dll
-/home/marsh/Documents/Github/ShaderBox/ShaderBox/ShaderBoxLib/obj/Debug/ShaderBoxLib.dll.mdb
-/home/marsh/Documents/Github/ShaderBox/ShaderBox/ShaderBoxLib/bin/Debug/Pencil.Gaming.dll
-/home/marsh/Documents/Github/ShaderBox/ShaderBox/ShaderBoxLib/bin/Debug/NVorbis.dll
+/home/marsh/Documents/Github/ShaderCrate/ShaderBox/ShaderBoxLib/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/home/marsh/Documents/Github/ShaderCrate/ShaderBox/ShaderBoxLib/bin/Debug/ShaderBoxLib.dll.mdb
+/home/marsh/Documents/Github/ShaderCrate/ShaderBox/ShaderBoxLib/bin/Debug/ShaderBoxLib.dll
+/home/marsh/Documents/Github/ShaderCrate/ShaderBox/ShaderBoxLib/obj/Debug/ShaderBoxLib.dll
+/home/marsh/Documents/Github/ShaderCrate/ShaderBox/ShaderBoxLib/obj/Debug/ShaderBoxLib.dll.mdb
+/home/marsh/Documents/Github/ShaderCrate/ShaderBox/ShaderBoxLib/bin/Debug/Pencil.Gaming.dll
+/home/marsh/Documents/Github/ShaderCrate/ShaderBox/ShaderBoxLib/bin/Debug/NVorbis.dll

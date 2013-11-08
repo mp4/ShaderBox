@@ -14,6 +14,7 @@ public partial class MainWindow: Gtk.Window
 	{
 		Build ();
 		this.KeyPressEvent += Compile;
+		this.textviewVertex.Buffer.Changed += doOnTextChangedVertex;
 	}
 
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)
@@ -70,10 +71,10 @@ public partial class MainWindow: Gtk.Window
 			if(fileName.EndsWith(".dll"))
 			{
 				Assembly asm = Assembly.LoadFile (fileName);
-				var enumer = asm.DefinedTypes.GetEnumerator();
-				enumer.MoveNext();
-				Console.WriteLine(enumer.Current);
-				shaderProg = (ShaderProgram)asm.CreateInstance(enumer.Current.ToString());
+				//var enumer = asm.GetType().GetEnumerator();
+				//enumer.MoveNext();
+				//Console.WriteLine(enumer.Current);
+				shaderProg = (ShaderProgram)asm.CreateInstance(asm.GetTypes()[0].ToString());
 
 //				shaderProg.Start();
 //				shaderProg.Stop();
@@ -134,5 +135,13 @@ public partial class MainWindow: Gtk.Window
 	{
 		Console.WriteLine (FilePath.Text);
 		saveName = FilePath.Text;
+	}
+
+	void doOnTextChangedVertex(object sender, EventArgs e)
+	{
+		Console.WriteLine ("do on text changed");
+		TextTag tag = new TextTag ("blue");
+		tag.Foreground = "0 0 255";
+		textviewVertex.Buffer.ApplyTag ("blue", textviewVertex.Buffer.StartIter, textviewVertex.Buffer.EndIter);
 	}
 }

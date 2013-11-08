@@ -3,7 +3,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="ShaderBox/MainWindow.cs">
     <Files>
       <File FileName="ShaderBox/Program.cs" Line="1" Column="1" />
-      <File FileName="ShaderBox/MainWindow.cs" Line="29" Column="19" />
+      <File FileName="ShaderBox/MainWindow.cs" Line="144" Column="28" />
       <File FileName="ShaderBoxLib/ShaderProgram.cs" Line="1" Column="1" />
       <File FileName="../../Mastiff/PencilTestsx/PencilTest/CameraDemo/CameraProgram.cs" Line="1" Column="1" />
       <File FileName="ExampleShader/ExampleShader.cs" Line="1" Column="1" />
@@ -15,9 +15,8 @@
             <Node name="References" expanded="True" />
           </Node>
           <Node name="ShaderCrate" expanded="True">
-            <Node name="References" expanded="True" />
+            <Node name="References" expanded="True" selected="True" />
             <Node name="natives64" expanded="True" />
-            <Node name="MainWindow.cs" selected="True" />
           </Node>
           <Node name="ShaderCrateLib" expanded="True">
             <Node name="References" expanded="True" />
@@ -29,9 +28,6 @@
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
-      </Pad>
-      <Pad Id="ConnectionManagerPad">
-        <State selected="True" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

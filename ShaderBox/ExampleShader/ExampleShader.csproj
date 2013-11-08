@@ -30,11 +30,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Pencil.Gaming">
-      <HintPath>..\..\..\Pencil.Gaming\Pencil.Gaming\bin\Core - GLFW3\Pencil.Gaming.dll</HintPath>
-    </Reference>
     <Reference Include="ColladaImporter">
       <HintPath>..\..\..\Mastiff\PencilTestsx\PencilTest\ColladaImporter\bin\Debug\ColladaImporter.dll</HintPath>
+    </Reference>
+    <Reference Include="Pencil.Gaming.dll">
+      <HintPath>..\..\..\Pencil.Gaming\Pencil.Gaming\bin\Core - GLFW3\Pencil.Gaming.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

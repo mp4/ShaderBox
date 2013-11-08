@@ -30,7 +30,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Pencil.Gaming">
+    <Reference Include="Pencil.Gaming.dll">
       <HintPath>..\..\..\Pencil.Gaming\Pencil.Gaming\bin\Core - GLFW3\Pencil.Gaming.dll</HintPath>
     </Reference>
   </ItemGroup>
